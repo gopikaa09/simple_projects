@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainbow</title>
+    <style>
+        body{
+            background-color: rgb(3, 189, 235);
+        }
+        .main{
+            position: absolute;
+            left: 250px;
+            top: 100px;
+        }
+        .bg{
+            height: 120px;
+            width: 240px;
+            background-color: rgb(3, 189, 235);
+            border-radius: 150px 150px 0 0;
+            position: absolute;
+            left: 80px;
+            top: 80px;
+        }
+        .rainbow{
+        height: 300px;
+        width: 600px;
+        border-radius: 250px 250px 0 0;
+        background-color: green;
+        width: 400px;
+        height: 200px;
+        background-image:repeating-linear-gradient(violet,indigo,blue,green,yellow,orange,red);
+        }
+        .image1{
+            position: absolute;
+            left: 50px;
+            top: 140px;
+        }
+        .image2{
+            position: absolute;
+            left: 400px;
+            top: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="rainbow">
+            <div class="bg"></div>
+        </div>
+    </div>
+    <img class="image1" src="images/cloud.gif">
+    <img class="image2" src="images/cloud.gif">
+</body>
+</html>

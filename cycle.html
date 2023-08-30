@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(images/3554.jpg_wh1200.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .container1{
+            
+        }
+        .container2{
+
+        }
+        .stick1{
+            background-color: brown;
+            width: 5px;
+            height: 200px;
+            position: absolute;
+            left: 250px;
+            top: 320px;
+            transform: rotate(-30deg);
+        }
+        .stick2{
+            background-color: brown;
+            width: 5px;
+            height: 300px;
+            position: absolute;
+            left: 320px;
+            bottom: 270px;
+
+        }
+        .circle1,.circle2{
+            width: 150px;
+            height: 150px;
+            background-color: green;
+            border-radius: 50%;
+            animation-name: circle_anime;
+            animation-iteration-count: infinite;
+            animation-duration: 0.1s;
+            background-image: repeating-conic-gradient(blue 0deg 20deg,green 20deg 40deg,yellow 40deg 60deg,red 60deg 80deg);
+        }
+        .circle1{
+            position: absolute;
+            left: 250px;
+            top: 100px;
+            z-index: 1;
+        }
+        .circle2{
+            position: absolute;
+            top: 200px;
+            left: 100px;
+        }
+        img{
+            position: absolute;
+            left: 200px;
+            bottom: 0px;
+        }
+        @keyframes circle_anime {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container1">
+        <div class="stick1"></div>
+        
+        <div class="circle1">
+
+        </div>
+    </div>
+    <div class="container2">
+        <div class="stick2"></div>
+        
+        <div class="circle2">
+
+        </div>
+    </div>
+    <img src="./images/cycle2.gif" width="500px">
+</body>
+</html>
